@@ -10,9 +10,6 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from PyQt5.Qt import Qt, QWidget, QGridLayout, QApplication, QPushButton, QLabel
 
-
-# app = QApplication(sys.argv)
-
 class CONFIG(enumerate):
   app = QApplication(sys.argv)
   SCREEN_WIDTH = QApplication.desktop().width()
@@ -34,7 +31,6 @@ class CONFIG(enumerate):
 class QWindow(QWidget):
   def __init__(self, title, icon, width, height, x, y, parent=None, flags=Qt.WindowFlags()):
     super().__init__(parent=parent, flags=flags)
-    
     pass
 
   def init_layout(self, title, icon):
